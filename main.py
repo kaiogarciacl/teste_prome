@@ -17,7 +17,6 @@ if log == '' or senha == '':
     apontamento.apontamento()
 
 if log != '' and senha != '':
-    
     menu_opcao = [
         {'icon': 'bi bi-building', 'label': 'Comercial',
          'submenu': [{'icon': 'bi bi-list-ol', 'label': 'Abrir Orçamento'},
@@ -90,8 +89,8 @@ if log != '' and senha != '':
                      {'icon': 'bi bi-person-plus', 'label': 'Configuração da Conta'}]},
     
         {'icon': 'bi bi-person-circle', 'label': 'Teste'}]
-
-        tema = {'txc_inactive': 'black', 'menu_background': '#eaeaea', 'txc_active': 'black', 'option_active': '#ffffff', 'gap': '0rem'}
-        opcao = hc.nav_bar(menu_definition=menu_opcao, home_name='Ambiente', override_theme=tema, sticky_mode='sticky', sticky_nav=False)
+    
+    tema = {'txc_inactive': 'black', 'menu_background': '#eaeaea', 'txc_active': 'black', 'option_active': '#ffffff', 'gap': '0rem'}
+    opcao = hc.nav_bar(menu_definition=menu_opcao, home_name='Ambiente', override_theme=tema, sticky_mode='sticky', sticky_nav=False)
 
     
