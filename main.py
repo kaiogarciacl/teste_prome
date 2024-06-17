@@ -2,7 +2,7 @@ import streamlit as st
 import apontamento
 
 
-from streamlit_modal import Modal
+
 
 st.set_page_config(page_title="PROMETHEUS",layout="wide", initial_sidebar_state="collapsed")
 
