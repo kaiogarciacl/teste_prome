@@ -5,6 +5,7 @@ from streamlit_modal import Modal
 def apontamento():
     colb1, colb2, colb3 = st.columns([2.4, 3, 1])
     with colb2:
+        st.markdown('imagem')
     cold1, cold2, cold3 = st.columns([2.35, 3, 1])
     with cold2:
         st.title('Apontamento de Atividade')
