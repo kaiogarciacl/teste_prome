@@ -1,6 +1,4 @@
 import streamlit as st
-from streamlit_modal import Modal
-
 
 def apontamento():
     colb1, colb2, colb3 = st.columns([2.4, 3, 1])
