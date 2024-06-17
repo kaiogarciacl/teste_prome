@@ -1,6 +1,6 @@
 import streamlit as st
 import apontamento
-import hydralit_components as hc
+
 
 from streamlit_modal import Modal
 
