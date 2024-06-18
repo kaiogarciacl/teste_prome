@@ -3,7 +3,7 @@ import comandos
 import conexao as cn
 import models as md
 
-def teste():
+def kaio():
     comando = st.text_area('comando')
 
     def vai():
