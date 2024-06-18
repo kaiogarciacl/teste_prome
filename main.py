@@ -8,8 +8,7 @@ st.set_page_config(page_title="PROMETHEUS",layout="wide", initial_sidebar_state=
 with open("style.css") as f:st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-with st.sidebar:
-    st.image(fr'D:\img_prometheus\logo_prometeus.jpeg')
+with st.sidebar?
     
     log = st.text_input('LOG', label_visibility='collapsed', placeholder='Login', key='Log')
     senha = st.text_input('senha', label_visibility='collapsed', placeholder='Senha', key='senha', type='password')
@@ -91,3 +90,6 @@ if log != '' and senha != '' :
     
     tema = {'txc_inactive': 'black', 'menu_background': '#eaeaea', 'txc_active': 'black', 'option_active': '#ffffff', 'gap': '0rem'}
     opcao = hc.nav_bar(menu_definition=menu_opcao, home_name='Ambiente', override_theme=tema, sticky_mode='sticky', sticky_nav=False)
+
+    if opcao == 'Teste':
+        testes.teste()
