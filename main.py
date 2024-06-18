@@ -90,14 +90,3 @@ if log != '' and senha != '' :
     
     tema = {'txc_inactive': 'black', 'menu_background': '#eaeaea', 'txc_active': 'black', 'option_active': '#ffffff', 'gap': '0rem'}
     opcao = hc.nav_bar(menu_definition=menu_opcao, home_name='Ambiente', override_theme=tema, sticky_mode='sticky', sticky_nav=False)
-
-
-
-
-
-
-
-
-
-
-
