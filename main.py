@@ -3,6 +3,7 @@ import hydralit_components as hc
 from streamlit_modal import Modal
 import testes
 import models as md
+import comandos
 
 
 st.set_page_config(page_title="PROMETHEUS",layout="wide", initial_sidebar_state="collapsed")
