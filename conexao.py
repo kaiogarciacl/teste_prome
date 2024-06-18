@@ -1,6 +1,8 @@
 import pyodbc as py
 import models as md
 import time
+import streamlit as st
+
 
 conexao_sql = py.connect("DRIVER={ODBC Driver 17 for SQL Server};SERVER="
         + st.secrets["server"]
