@@ -6,3 +6,5 @@ bs4
 deprecation
 lxml
 soupsieve
+pyodbc
+time
