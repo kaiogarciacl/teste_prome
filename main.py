@@ -30,4 +30,11 @@ if log != '' and senha != '' :
     opcao = hc.nav_bar(menu_definition=menu_opcao, home_name='Ambiente', override_theme=tema, sticky_mode='sticky', sticky_nav=False)
 
     if opcao == 'Teste':
-        testes.kaio()
+        
+        comando = st.text_area('comando')
+
+        def vai():
+            md.executar = comando
+            comandos.vai_porra()
+            
+        st.button('vai', on_click=vai)
