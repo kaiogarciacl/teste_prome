@@ -5,7 +5,11 @@ import comandos
 import models as md
 import time
 
-conexao_sql = py.connect(
+
+
+@st.cache_resource
+def init_connection():
+    return pyodbc.connect(
         "DRIVER={ODBC Driver 17 for SQL Server};SERVER="
         + st.secrets["server"]
         + ";DATABASE="
@@ -13,7 +17,11 @@ conexao_sql = py.connect(
         + ";UID="
         + st.secrets["username"]
         + ";PWD="
-        + st.secrets["password"]).cursor()
+        + st.secrets["password"]
+    )
+
+conexao_sql = init_connection()
+
 
 def pesquisar_tabela(query):
     with conexao_sql.cursor() as cur:
