@@ -2,9 +2,6 @@ import streamlit as st
 import comandos
 import conexao as cn
 import models as md
-import streamlit as st
-import os
-
 
 def teste():
     comando = st.text_area('comando')
