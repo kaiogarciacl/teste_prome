@@ -7,4 +7,3 @@ deprecation
 lxml
 soupsieve
 pyodbc
-time
