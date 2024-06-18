@@ -5,7 +5,7 @@ import comandos
 import models as md
 import time
 
-cursor = py.connect(
+conexao_sql = py.connect(
         "DRIVER={ODBC Driver 17 for SQL Server};SERVER="
         + st.secrets["server"]
         + ";DATABASE="
