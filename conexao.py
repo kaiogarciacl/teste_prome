@@ -1,20 +1,18 @@
 import pyodbc as py
 import models as md
 import time
+import secrets as st
 
-def init_connection():
-    return pyodbc.connect(
-        "DRIVER={ODBC Driver 17 for SQL Server};SERVER="
+conexao_sql = pyodbc.connect("DRIVER={ODBC Driver 17 for SQL Server};SERVER="
         + st.secrets["server"]
         + ";DATABASE="
         + st.secrets["database"]
         + ";UID="
         + st.secrets["username"]
         + ";PWD="
-        + st.secrets["password"]
-    )
+        + st.secrets["password"])
 
-conexao_sql = init_connection()
+
 
 
 def pesquisar_tabela(query):
