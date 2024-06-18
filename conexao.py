@@ -1,10 +1,6 @@
 import pyodbc as py
-import streamlit as st
-import streamlit.components.v1 as components
-import comandos
 import models as md
 import time
-
 
 
 @st.cache_resource
