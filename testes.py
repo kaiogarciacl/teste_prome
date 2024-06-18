@@ -2,27 +2,23 @@ import streamlit as st
 import comandos
 import conexao as cn
 import models as md
-
+import streamlit as st
+import os
 
 
 def teste():
-    comando = st.text_area('comando')
 
-    def vai():
-        md.executar = comando
-        comandos.vai_porra()
+    # Everything is accessible via the st.secrets dict:
+    st.write("DB username:", st.secrets["db_username"])
+    st.write("DB password:", st.secrets["db_password"])
+    st.write("My cool secrets:", st.secrets["my_cool_secrets"]["things_i_like"])
+    
+    # And the root-level secrets are also accessible as environment variables:
+    st.write(
+        "Has environment variables been set:",
+        os.environ["db_username"] == st.secrets["db_username"],
+    )
 
 
-    st.button('vai', on_click=vai)
-
-    rows = f""" select * from [3_tabela_comandos] """
-    cursor = cn.conexao_sql.cursor()
-    cursor.execute(rows)
-    rows = cursor.fetchall()
-    for row in rows:
-        rows = f""" {row[0]} """
-        cursor = cn.conexao_sql.cursor()
-        cursor.execute(rows)
-        rows = cursor.fetchall()
-        for row in rows:
-            st.markdown(row[0])
+    
+    
